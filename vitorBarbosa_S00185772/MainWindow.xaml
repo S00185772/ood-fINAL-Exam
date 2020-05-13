@@ -13,29 +13,33 @@
 
             <StackPanel  Orientation="Horizontal" Margin="5">
 
-                <Image Source="{Binding  OsImage}" Width="75"/>
+                <Image Source="{Binding  OsImage}" Width="50"/>
 
                 <StackPanel>
                     <TextBlock Text="{Binding phoneName}" Margin="5" FontSize="12"/>
- 
+
                 </StackPanel>
 
 
 
 
             </StackPanel>
-            
-            
-            
-            
-            
+
+
+
+
+
         </DataTemplate>
-        
-        
-        
-        
+
+
+
+
     </Window.Resources>
     <Grid>
-        
+        <ListBox x:Name="lbxPhone" HorizontalAlignment="Left" Height="339" VerticalAlignment="Top" Width="273" Margin="66,41,0,0"
+                 ItemTemplate="{StaticResource listBoxTemplate}" SelectionChanged="lbxPhone_SelectionChanged"/>
+        <TextBlock x:Name="TBlkPrice" HorizontalAlignment="Left" Height="52" Margin="538,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209"/>
+        <Image HorizontalAlignment="Left" Height="224" Margin="538,156,0,0" VerticalAlignment="Top" Width="209"/>
+
     </Grid>
 </Window>
